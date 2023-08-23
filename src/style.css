@@ -1,0 +1,392 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  /* overflow-x: hidden; */
+}
+
+.view {
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center top;
+}
+
+/* #region view0 */
+
+#view0 {
+  padding: 0 2%;
+  /* width: 100%; */
+  background-image: url('assets/view0BG.png');
+  background-position: 40% 0%;
+}
+
+#view0 nav,
+.sticky,
+footer {
+  display: flex;
+  justify-content: space-between;
+}
+#view0 nav img,
+.sticky img {
+  margin: 8px 0 0 0px;
+  height: 45px;
+  width: 45px;
+  vertical-align: baseline;
+}
+
+#view0 nav span,
+.sticky-links {
+  padding: 20px 0;
+}
+#view0 nav a,
+.sticky a {
+  margin-left: 35px;
+  font-family: 'Lato';
+  font-size: 12px;
+  font-style: italic;
+  font-weight: 600;
+  color: white;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  letter-spacing: 2px;
+}
+
+#view0 h1 {
+  margin: 0 0 -0.1em 10%;
+  line-height: 0.9em;
+  font-family: 'Bebas Neue';
+  font-weight: normal;
+}
+#view0 h1:first-of-type {
+  margin-top: 15vh;
+  font-size: 9.75vw;
+  color: #4d4d4d;
+}
+#view0 h1:last-of-type {
+  background: linear-gradient(to bottom, #414f6b 70%, black 115%);
+  font-size: 10.6vw;
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+/* #endregion view0 */
+
+/* #region sticky nav */
+
+.sticky {
+  position: sticky;
+  top: 0;
+  padding: 8px 2%;
+  background-color: white;
+  z-index: 10;
+}
+.sticky-icon,
+.footer-icon {
+  display: flex;
+}
+.sticky-title,
+.footer-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 5px;
+}
+.sticky-title h6,
+.footer-title h6 {
+  margin: -0.1em 0 -0.3em 0;
+  text-align: left;
+  font-family: 'Bebas Neue';
+  font-weight: normal;
+}
+.sticky-title h6:first-child,
+.footer-title h6:first-child {
+  font-size: 25px;
+  color: #4d4d4d;
+}
+.sticky-title h6:last-child,
+.footer-title h6:last-child {
+  font-size: 27px;
+  color: #414f6b;
+}
+.sticky img,
+footer img {
+  clear: both;
+}
+.sticky-links a {
+  color: #414f6b;
+}
+
+/* #endregion sticky nav */
+
+/* #region view1 */
+
+#history {
+  position: relative;
+  padding: 4vh 0 0 0;
+  width: 100%;
+  background-position: center;
+}
+.view1BGImg,
+.view1BGCover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -2;
+  width: 100%;
+  height: 100%;
+  background-position: center top;
+}
+.view1BGCover {
+  z-index: -1;
+  background-color: #f5f5f5;
+  transition: 1s;
+  opacity: 0;
+}
+.view1BGCoverOn {
+  opacity: 1;
+}
+.view1Img0,
+.view1Carousel-thumb0 {
+  background-image: url('assets/view1BG.png');
+}
+.view1Img1,
+.view1Carousel-thumb1 {
+  background-image: url('assets/carousel1.png');
+}
+.view1Img2,
+.view1Carousel-thumb2 {
+  background-image: url('assets/carousel2.png');
+}
+.viewTitle {
+  padding: 0 2%;
+  margin-bottom: -4vh;
+  white-space: nowrap;
+}
+.viewTitle h1 {
+  display: inline-block;
+  margin: 0;
+  font-family: 'Oswald';
+  font-size: 15vh;
+  color: #414f6b;
+  opacity: 50%;
+}
+.viewTitle h2 {
+  display: inline-block;
+  margin: 8.5vh 0 0 -2.3vh;
+  vertical-align: top;
+  font-family: 'Oswald';
+  font-size: 5vh;
+  color: #414f6b;
+}
+.viewDesc {
+  margin: 0;
+  font-family: 'Lato';
+  font-weight: lighter;
+  font-size: 18px;
+  padding: 0 2%;
+}
+
+.view1Carousel {
+  position: absolute;
+  bottom: 0;
+  padding: 20px 2%;
+  width: 96%;
+  background-color: rgba(65, 79, 107, 0.7);
+}
+.view1Carousel-imgs,
+.view1Carousel-ellipses {
+  display: flex;
+  justify-content: center;
+}
+.view1Carousel-imgs > div {
+  cursor: pointer;
+  display: inline-block;
+  width: 9vw;
+  height: 6vw;
+  margin: 0 5px;
+}
+.view1Carousel-thumb0,
+.view1Carousel-thumb1,
+.view1Carousel-thumb2 {
+  background-size: cover;
+}
+.view1Carousel-ellipse {
+  margin: 5px 3px 0 3px;
+  height: 5px;
+  width: 5px;
+  border-radius: 50%;
+  background-color: white;
+  opacity: 0.2;
+}
+.view1Carousel-selectedEllipse {
+  opacity: 1;
+}
+
+/* #endregion view1 */
+
+/* #region view2 */
+
+#team {
+  position: relative;
+  padding: 0;
+  width: 100%;
+}
+
+.view2Title {
+  display: flex;
+  align-items: center;
+  padding: 0 2%;
+  background-color: white;
+}
+.view2Title .viewTitle {
+  margin-top: -2vh;
+  padding: 0 0 2vh 0;
+}
+.view2Title .viewDesc {
+  font-size: 14px;
+  padding: 0 4%;
+}
+
+#team nav {
+  padding: 0 2%;
+  background-color: #414f6b;
+}
+#team nav div,
+.view2TagMobile {
+  cursor: pointer;
+  display: inline-block;
+  padding: 5px 20px;
+  font-family: 'Oswald';
+  font-weight: bold;
+  font-size: 20px;
+  color: #b0b4be;
+}
+.team-selected-tag {
+  background-color: #b0b4be !important;
+  color: #414f6b !important;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+.view2Team0 {
+  background-image: url('assets/mountain0.png');
+}
+.view2Team1 {
+  background-image: url('assets/mountain1.png');
+}
+
+.view2Schedule,
+.view2ScheduleMobile {
+  display: inline-block;
+  margin: 5% 0 0 22%;
+  padding: 20px 35px;
+  background-color: rgba(255, 255, 255, 0.7);
+}
+.view2Schedule h3,
+.view2ScheduleMobile h3 {
+  margin: 0;
+  font-family: 'Oswald';
+  font-weight: bold;
+  font-size: 32px;
+  color: #414f6b;
+}
+.view2Schedule td,
+.view2ScheduleMobile td {
+  font-family: 'Lato';
+  font-weight: lighter;
+}
+.view2Schedule td:first-child {
+  padding-right: 40px;
+}
+
+footer {
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  padding: 12px 2%;
+  width: 96%;
+  background-color: #414f6b;
+}
+.footer-icon img {
+  opacity: 0.4;
+}
+.footer-title h6 {
+  color: #63769d !important;
+}
+.copyright {
+  font-family: 'Lato';
+  font-weight: bolder;
+  font-style: italic;
+  font-size: 11px;
+  color: #63769d;
+}
+
+.view2TagMobile {
+  display: block;
+  text-align: center;
+  background-color: #414f6b;
+}
+.view2ScheduleMobile {
+  display: block;
+  text-align: center;
+  margin: 0;
+}
+.view2ScheduleMobile table {
+  width: 100%;
+}
+.view2ScheduleMobile td {
+  width: 50%;
+}
+
+#team nav,
+.view2Schedule {
+  display: none;
+}
+
+/* #endregion view2 */
+
+@media screen and (min-device-width: 700px) and (min-width: 700px) {
+  #view0,
+  .sticky,
+  .viewTitle,
+  .view1Carousel,
+  #team nav,
+  footer {
+    padding-right: 20%;
+    padding-left: 20%;
+  }
+  #view0,
+  .view1Carousel,
+  footer {
+    width: 60%;
+  }
+  .viewDesc,
+  .view2Title {
+    padding-right: 22%;
+    padding-left: 22%;
+  }
+
+  #team nav {
+    display: block;
+  }
+  .view2Schedule {
+    display: inline-block;
+  }
+
+  .view2ScheduleMobile,
+  .view2TagMobile {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 26.5625em) {
+  /* 425px / 16px = 26.5625em */
+  #view0 nav span,
+  .sticky-links {
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+  }
+}
