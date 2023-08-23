@@ -4,7 +4,7 @@ import './style.css';
 
 function App() {
   const [v1SelectedImg, setV1SelectedImg] = useState(0);
-  const [v1CoverFaded, setV1CoverFaded] = useState(false);
+  const v1CoverFaded = false;
   const [v2SelectedTeam, setV2SelectedTeam] = useState(0);
 
   let v1BGAnimeOngoing = false;
